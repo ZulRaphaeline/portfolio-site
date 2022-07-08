@@ -1,8 +1,8 @@
 .jumbotron {
-  padding: 2rem 1rem;
-  background-color: #4d639e;
+  padding: 2rem;
+  background-color: #55747e;
 }
 
-.html {
-  scroll-behavior: smooth;
+.about {
+  padding: 2rem;
 }
