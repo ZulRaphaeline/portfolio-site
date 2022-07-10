@@ -1,4 +1,12 @@
 /*Main Style*/
+:root {
+  --primary-color: #646fd4;
+  --secondary-color: #9ba3eb;
+  --third-color: white;
+  --fourth-color: black;
+  --bar-color: #d8829d;
+}
+
 .dark-theme {
   --primary-color: #70394a;
   --secondary-color: #8a5163;
@@ -7,13 +15,6 @@
   --bar-color: #6665ee;
 }
 
-:root {
-  --primary-color: #646fd4;
-  --secondary-color: #9ba3eb;
-  --third-color: white;
-  --fourth-color: black;
-  --bar-color: #d8829d;
-}
 #icon {
   width: 50px;
   cursor: pointer;
