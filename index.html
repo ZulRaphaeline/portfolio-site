@@ -10,6 +10,9 @@
 
     <!-- My CSS Style -->
     <link rel="stylesheet" href="style.css" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="function.js"></script>
     <link rel="icon" href="img/zulfikhar-akbar.jpg" />
     <title>My Portfolio | Zulfikhar Akbar</title>
   </head>
@@ -19,20 +22,23 @@
     <!-- NavBar Start-->
     <nav class="navbar navbar-expand-lg navbar-dark">
       <div class="container">
-        <a class="navbar-brand" href="#">My Portfolio | Zulfikhar Akbar</a>
+        <a class="navbar-brand" href="index.html">My Portfolio | Zulfikhar Akbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">About Me</a>
+              <a class="nav-link active" aria-current="page" href="#about">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="career.html" alt="">Career</a>
+              <a class="nav-link active" aria-current="page" href="#timeline">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#socialcard">Social</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"> Social </a>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true"> Mutual </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                 <li><a class="dropdown-item" href="https://www.instagram.com/zulfikhar1412/" target="_blank">Instagram</a></li>
                 <li><a class="dropdown-item" href="https://twitter.com/zulfikhar_akbar/" target="_blank">Twitter</a></li>
@@ -62,7 +68,7 @@
     <!-- Jumbotron End -->
 
     <!-- About-->
-    <section class="about">
+    <section id="about" class="about">
       <div class="container">
         <div class="row text-center">
           <div class="col">
@@ -78,6 +84,129 @@
     </section>
     <!-- About End-->
 
+    <!--Theme Line-->
+    <section id="timeline" class="timeline">
+      <div class="container" style="padding-top: 8rem">
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <h2>Title</h2>
+            <div class="date">1 MAY 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header">
+              <h2>Card Title</h2>
+            </div>
+            <div class="date">25 MAY 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date">3 JUN 2016</div>
+            <h2>Quote</h2>
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInRight">
+            <h2>Title</h2>
+            <div class="date">22 JUN 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content timeline-card js--fadeInLeft">
+            <div class="timeline-img-header">
+              <h2>Card Title</h2>
+            </div>
+            <div class="date">10 JULY 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header">
+              <h2>Card Title</h2>
+            </div>
+            <div class="date">30 JULY 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date">5 AUG 2016</div>
+            <h2>Quote</h2>
+            <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta explicabo debitis omnis dolor iste fugit totam quasi inventore!</blockquote>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content timeline-card js--fadeInRight">
+            <div class="timeline-img-header">
+              <h2>Card Title</h2>
+            </div>
+            <div class="date">19 AUG 2016</div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content js--fadeInLeft">
+            <div class="date">1 SEP 2016</div>
+            <h2>Title</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime ipsa ratione omnis alias cupiditate saepe atque totam aperiam sed nulla voluptatem recusandae dolor, nostrum excepturi amet in dolores. Alias, ullam.</p>
+            <a class="bnt-more" href="javascript:void(0)">More</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Theme Line End-->
+
+    <!-- Social Card-->
+    <section id="socialcard" class="inress">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>social card</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Social Card end-->
+
     <!-- Progress-->
     <section class="inress">
       <div class="container">
@@ -89,5 +218,24 @@
       </div>
     </section>
     <!-- Progress end-->
+
+    <!-- EndBar-->
+    <section class="endbar text-start fw-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <p>Website sedang dalam Tahap Pembangunan</p>
+          </div>
+          <div class="col-md-4">
+            <p>Website sedang dalam Tahap Pembangunan</p>
+          </div>
+          <div class="col-md-4">
+            <p>Website sedang dalam Tahap Pembangunan</p>
+            <p>lorem ipsum</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EndBar end-->
   </body>
 </html>
