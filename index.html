@@ -38,8 +38,9 @@
               <a class="nav-link active rounded-pill text-center" aria-current="page" href="#timeline">Career</a>
             </li>
             <li class="nav-item">
-              <!--<a class="nav-link active rounded-pill" aria-current="page" href="#socialcard">Social</a>-->
+              <a class="nav-link active rounded-pill text-center" id="theme">Theme</a>
             </li>
+
             <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle rounded-pill text-center" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="true"> Mutual </a>
               <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
@@ -79,7 +80,7 @@
           </div>
         </div>
         <div class="row" style="padding-top: 5rem">
-          <div class="col text-center" style="background-color: black; padding: 5rem">
+          <div class="col aboutbg text-center">
             <p>Seorang mahasiswa tahun pertama di Universitas Telkom dengan jurusan Sarjana Teknik Elektro. Saya senang sekali mempelajari dan mendalami ilmu dalam bidang komputasi dan pemprograman.</p>
           </div>
         </div>
@@ -88,7 +89,7 @@
     <!-- About End-->
 
     <!--Skills-->
-    <section id="skills" class="skills" style="background: #8a5163">
+    <section id="skills" class="skills">
       <div class="container">
         <div class="row text-center justify-content-center" style="padding: 4rem; color: white">
           <div class="col-md-3 skill-tittle rounded-pill">
@@ -292,4 +293,12 @@
     </section>
     <!-- EndBar end-->
   </body>
+  <script>
+    var theme = document.getElementById("theme");
+
+    theme.onclick = function () {
+      document.body.classList.toggle("dark-theme");
+      if (document.body.navbar.jumbotron.skills.classList.contains("dark-theme"));
+    };
+  </script>
 </html>
