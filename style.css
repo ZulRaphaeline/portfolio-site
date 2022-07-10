@@ -1,4 +1,7 @@
 /*Main Style*/
+body::-webkit-scrollbar {
+  display: none;
+}
 .navbar {
   background-color: #70394a;
   box-shadow: 0 1px 6px 1px rgba(0, 0, 0, 0.6);
@@ -19,6 +22,11 @@
   background: #8a5163;
   color: #ffffff;
   text-decoration: none;
+}
+
+.navbar-nav,
+.nav-item {
+  padding: 2px;
 }
 .dropdown-item:hover,
 .dropdown-item:active,
@@ -64,9 +72,13 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-.skillbg {
-  padding-top: 2rem;
-  padding-bottom: 5rem;
+.skillbg1 {
+  padding-top: 1rem;
+  background: #8a5163;
+}
+.skillbg2 {
+  padding-top: 9rem;
+  padding-bottom: 2rem;
   background: #8a5163;
 }
 .skill-tittle {
@@ -152,7 +164,7 @@
 
 /*bahasa manusia*/
 .bar .progress-line.indonesia span {
-  width: 99%;
+  width: 100%;
 }
 .bar .progress-line.english span {
   width: 55%;
@@ -166,6 +178,19 @@
 .bar .progress-line.melayu span {
   width: 68%;
 }
+/*skill*/
+.bar .progress-line.team span {
+  width: 75%;
+}
+.bar .progress-line.commu span {
+  width: 85%;
+}
+.bar .progress-line.commit span {
+  width: 94%;
+}
+.bar .progress-line.creative span {
+  width: 87%;
+}
 
 .progress-line span::before {
   position: absolute;
@@ -177,7 +202,6 @@
   border: 7px solid transparent;
   border-bottom-width: 0px;
   border-right-width: 0px;
-  border-top-color: #000;
   opacity: 0;
   animation: showText2 0.5s 1.5s linear forwards;
 }
@@ -199,44 +223,10 @@
     opacity: 1;
   }
 }
-/*bahasa program*/
-.progress-line.html span::after {
-  content: "90%";
-}
-.progress-line.c span::after {
-  content: "90%";
-}
-.progress-line.css span::after {
-  content: "60%";
-}
-.progress-line.jquery span::after {
-  content: "25%";
-}
-.progress-line.python span::after {
-  content: "75%";
-}
-.progress-line.mysql span::after {
-  content: "25%";
-}
-/*bahasa manusia*/
-.progress-line.indonesia span::after {
-  content: "99%";
-}
-.progress-line.english span::after {
-  content: "55%";
-}
-.progress-line.japanese span::after {
-  content: "45%";
-}
-.progress-line.deutsch span::after {
-  content: "10%";
-}
-.progress-line.melayu span::after {
-  content: "68%";
-}
+
 /*career Style*/
 .themeline {
-  padding: 100px 0;
+  padding: 100px;
 }
 
 .timeline {
@@ -323,8 +313,13 @@
 }
 
 .timeline-item .timeline-img-header {
-  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("https://picsum.photos/1000/800/?random") center center no-repeat;
   background-size: cover;
+}
+.smp {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("img/214.jpg") no-repeat;
+}
+.campus {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.4)), url("img/TelU.png") center center no-repeat;
 }
 
 .timeline-img-header {
