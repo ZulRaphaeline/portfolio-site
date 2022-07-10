@@ -10,6 +10,7 @@
 
     <!-- My CSS Style -->
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style.scss" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script src="https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js"></script>
     <script type="text/javascript" src="function.js"></script>
@@ -36,6 +37,12 @@
             </li>
             <li class="nav-item">
               <a class="nav-link active rounded-pill text-center" aria-current="page" href="#timeline">Career</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active rounded-pill text-center" aria-current="page" href="#spotify">Spotify</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active rounded-pill text-center" aria-current="page" href="#org">Larissa</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active rounded-pill text-center" id="theme">Theme</a>
@@ -279,15 +286,106 @@
     </section>
     <!--Theme Line End-->
 
-    <!-- Social Card-->
+    <!-- Spotify-->
+    <section id="spotify" class="spotify">
+      <video id="bg-vid" poster="#" autoplay loop muted>
+        <source src="vid/wolf.mp4" type="video/mp4" />
+      </video>
+      <div class="container" style="padding-top: 3rem">
+        <div class="row sf-text align-items-center">
+          <div class="col-md">
+            <div>
+              <h2>SPOTIFY</h2>
+              <p>This is my playlist, hope you like it...</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <iframe
+              style="border-radius: 12px"
+              src="https://open.spotify.com/embed/playlist/37i9dQZF1Epie2uBFAwZhJ?utm_source=generator&theme=0"
+              width="100%"
+              height="380"
+              frameborder="0"
+              allowfullscreen=""
+              allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Spotify End-->
 
-    <!-- Social Card end-->
+    <!--Organization-->
+    <section id="org" style="padding-top: 11rem">
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(img/lar1.jpg)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">2011</p>
+        </div>
+
+        <div class="tl-content">
+          <h1>Lorem ipsum dolor sit</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(img/lar2.jpg)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">2013</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Vestibulum laoreet lorem</h1>
+          <p>Suspendisse potenti. Sed sollicitudin eros lorem, eget accumsan risus dictum id. Maecenas dignissim ipsum vel mi rutrum egestas. Donec mauris nibh, facilisis ut hendrerit vel, fringilla sed felis. Morbi sed nisl et arcu.</p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(img/lar3.jpg)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">2014</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Phasellus mauris elit</h1>
+          <p>
+            Mauris cursus magna at libero lobortis tempor. Suspendisse potenti. Aliquam interdum vulputate neque sit amet varius. Maecenas ac pulvinar nisi. Fusce vitae nunc ultrices, tristique dolor at, porttitor dolor. Etiam id cursus
+            arcu, in dapibus nibh. Pellentesque non porta leo. Nulla eros odio, egestas quis efficitur vel, pretium sed.
+          </p>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-bg" style="background-image: url(img/lar4.jpg)"></div>
+
+        <div class="tl-year">
+          <p class="f2 heading--sanSerif">2016</p>
+        </div>
+
+        <div class="tl-content">
+          <h1 class="f3 text--accent ttu">Mauris vitae nunc elem</h1>
+          <p>
+            Suspendisse ac mi at dolor sodales faucibus. Nunc sagittis ornare purus non euismod. Donec vestibulum efficitur tortor, eget efficitur enim facilisis consequat. Vivamus laoreet laoreet elit. Ut ut varius metus, bibendum
+            imperdiet ex. Curabitur diam quam, blandit at risus nec, pulvinar porttitor lorem. Pellentesque dolor elit.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!--Organization End-->
 
     <!-- EndBar-->
-    <section style="background-color: black">
+    <section class="align-self-end" style="background-color: black; position: relative">
       <div class="container">
-        <div class="row">
-          <p></p>
+        <div class="row text-center" style="color: white; padding-top: 1rem">
+          <p>© Nise Rapheline | 1412</p>
         </div>
       </div>
     </section>
