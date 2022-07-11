@@ -638,10 +638,12 @@ input:checked + .slider:before {
 .org-row {
   background-color: var(--primary-color);
   padding: 0px 20px;
+  border-radius: 25px;
 }
 .org {
   color: #fff;
   background-color: var(--secondary-color);
+  padding: 5rem;
 }
 .org ul {
   list-style-type: none;
@@ -701,64 +703,100 @@ input:checked + .slider:before {
 }
 
 /*hobbies*/
-.hobbies {
-  background: var(--secondary-color);
-  color: #fff;
-  margin: 0;
-  padding-top: 5rem;
+#hobbies {
+  display: flex;
+  background-color: #031625;
 }
-.center {
-  text-align: center;
+#hobbies:hover .tl-item {
+  width: 23.3333%;
 }
-
-.hobbies-con {
-  width: 95%;
-  max-width: 1220px;
-  margin: 0 auto;
-}
-
-.episode {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+.hb-item {
+  transform: translate3d(0, 0, 0);
   position: relative;
+  width: 25%;
+  height: 100vh;
+  min-height: 600px;
+  color: #fff;
+  overflow: hidden;
+  transition: width 0.5s ease;
 }
-
-.episode__number {
-  font-size: 2vw;
-  font-weight: 600;
-  padding: 10px 0;
-  position: sticky;
-  top: 5rem;
+.hb-item:before,
+.hb-item:after {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.hb-item:after {
+  background: rgba(3, 22, 37, 0.85);
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+.hb-item:before {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 75%);
+  z-index: 1;
+  opacity: 0;
+  transform: translate3d(0, 0, 0) translateY(50%);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+.hb-item:hover {
+  width: 30% !important;
+}
+.hb-item:hover:after {
+  opacity: 0;
+}
+.hb-item:hover:before {
+  opacity: 1;
+  transform: translate3d(0, 0, 0) translateY(0);
+  transition: opacity 1s ease, transform 1s ease 0.25s;
+}
+.hb-item:hover .tl-content {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.75s ease 0.5s;
+}
+.hb-item:hover .tl-bg {
+  filter: grayscale(0);
+}
+.hb-content {
+  transform: translate3d(0, 0, 0) translateY(25px);
+  position: relative;
+  z-index: 1;
   text-align: center;
-  height: calc(10vw + 20px);
-  transition: all 0.2s ease-in;
+  margin: 0 1.618em;
+  top: 55%;
+  opacity: 0;
 }
-
-.episode__content {
-  border-top: 2px solid #fff;
-  display: grid;
-  grid-template-columns: 1fr 4fr;
-  grid-gap: 10px;
-  padding: 15px 0;
+.hb-content h1 {
+  font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  color: #1779cf;
+  font-size: 1.44rem;
+  font-weight: normal;
 }
-
-.episode__content .title {
-  font-weight: 600;
+.hb-year {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  z-index: 1;
 }
-
-.episode__content .story {
-  line-height: 26px;
+.hb-year p {
+  font-size: 1.728rem;
+  line-height: 0;
 }
-
-@media (max-width: 600px) {
-  .episode__content {
-    grid-template-columns: 1fr;
-  }
-}
-
-@media (max-width: 576px) {
-  .episode__content .story {
-    font-size: 15px;
-  }
+.hb-bg {
+  transform: translate3d(0, 0, 0);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center center;
+  transition: filter 0.5s ease;
+  filter: grayscale(100%);
 }
 /*hobies end*/
