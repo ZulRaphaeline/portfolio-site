@@ -475,23 +475,7 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-/*quote*/
-#quote {
-  background: url(img/quote-background.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 7rem;
-}
-.bg-q-text {
-  background-color: white;
-  padding: 3rem;
-  -moz-border-radius: 20px;
-  -webkit-border-radius: 20px;
-  border-radius: 20px;
-  color: black;
-  opacity: 0.9;
-}
+
 
 /*Social Card*/
 #socialcard {
@@ -530,7 +514,7 @@ input:checked + .slider:before {
 }
 #bg-vid-mobile {
   width: 100%;
-  height: 110vh;
+  height: 115vh;
   position: absolute;
   object-position: 0 0;
   object-fit: cover;
