@@ -63,80 +63,6 @@
     </nav>
     <!--NavBar End-->
 
-    <!--Quote-->
-    <section id="quote">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-md">
-            <div class="row">
-              <div class="col-md bg-q-text text-md-center">
-                <q class="text-md">Cinta itu keikhlasan, tak ada paksaan ataupun rasa pelampiasan.</q>
-                <p>-Prof. Dr.ing. Ir. H. Bacharuddin Jusuf Habibie, FREng.</p>
-              </div>
-              <div class="col-md">
-                <img src="img/bj habibie.jpg" alt="B.J. Habibie" width="200" class="img-thumbnail mb-3" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--Quote End-->
-
-    <!--Hobbies-->
-    <section id="hobbies">
-      <div class="hb-item">
-        <div class="hb-bg" style="background-image: url(img/lar1.jpg)"></div>
-        <div class="hb-year">
-          <p class="f2 heading--sanSerif">1</p>
-        </div>
-        <div class="hb-content">
-          <h1>Larissa Rochefort</h1>
-          <p>Lorem</p>
-        </div>
-      </div>
-      <div class="hb-item">
-        <div class="hb-bg" style="background-image: url(img/lar2.jpg)"></div>
-        <div class="hb-year">
-          <p class="f2 heading--sanSerif">2</p>
-        </div>
-        <div class="hb-content">
-          <h1 class="f3 text--accent ttu">Larissa Rochefort</h1>
-          <p>Lorem</p>
-        </div>
-      </div>
-      <div class="hb-item">
-        <div class="hb-bg" style="background-image: url(img/lar2.jpg)"></div>
-        <div class="hb-year">
-          <p class="f2 heading--sanSerif">2</p>
-        </div>
-        <div class="hb-content">
-          <h1 class="f3 text--accent ttu">Larissa Rochefort</h1>
-          <p>Lorem</p>
-        </div>
-      </div>
-      <div class="hb-item">
-        <div class="hb-bg" style="background-image: url(img/lar2.jpg)"></div>
-        <div class="hb-year">
-          <p class="f2 heading--sanSerif">2</p>
-        </div>
-        <div class="hb-content">
-          <h1 class="f3 text--accent ttu">Larissa Rochefort</h1>
-          <p>Lorem</p>
-        </div>
-      </div>
-    </section>
-    <!--Hobbies End-->
-    <!-- Midline-->
-    <div class="align-self-end" style="background-color: black; position: relative">
-      <div class="container">
-        <div class="row text-center">
-          <p></p>
-        </div>
-      </div>
-    </div>
-    <!-- Midline end-->
-
     <!--Larissa-->
     <section id="cosplay">
       <div class="tl-item">
@@ -192,8 +118,29 @@
       </div>
     </section>
     <!--Larissa-->
+
+    <!-- EndBar-->
+    <section class="align-self-end" style="background-color: black; position: relative">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <li class="nav-item">
+              <a class="nav-link active rounded-pill text-center" aria-current="page" href="index.html#about">About Me</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- EndBar end-->
   </body>
   <script>
+    function openForm() {
+      document.getElementById("myForm").style.display = "block";
+    }
+
+    function closeForm() {
+      document.getElementById("myForm").style.display = "none";
+    }
     //color theme
     var theme = document.getElementById("theme");
 

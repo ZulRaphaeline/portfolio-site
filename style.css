@@ -225,6 +225,9 @@ body::-webkit-scrollbar {
 .bar .progress-line.creative span {
   width: 87%;
 }
+.bar .progress-line.lead span {
+  width: 67%;
+}
 
 .progress-line span::before {
   position: absolute;
@@ -752,12 +755,12 @@ input:checked + .slider:before {
   transform: translate3d(0, 0, 0) translateY(0);
   transition: opacity 1s ease, transform 1s ease 0.25s;
 }
-.hb-item:hover .tl-content {
+.hb-item:hover .hb-content {
   opacity: 1;
   transform: translateY(0);
   transition: all 0.75s ease 0.5s;
 }
-.hb-item:hover .tl-bg {
+.hb-item:hover .hb-bg {
   filter: grayscale(0);
 }
 .hb-content {
@@ -769,11 +772,10 @@ input:checked + .slider:before {
   top: 55%;
   opacity: 0;
 }
-.hb-content h1 {
+.hb-content p {
   font-family: "Pathway Gothic One", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   color: #1779cf;
-  font-size: 1.44rem;
   font-weight: normal;
 }
 .hb-year {
