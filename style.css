@@ -78,6 +78,8 @@ body::-webkit-scrollbar {
   background-color: var(--third-color);
   color: var(--fourth-color);
   padding: 5rem;
+  border-radius: 10px;
+  opacity: 0.8;
 }
 
 .inress {
@@ -490,12 +492,18 @@ input:checked + .slider:before {
 
 /*Social Card*/
 #socialcard {
+  background-color: var(--org-date-bgcolor);
+  padding: 7rem;
+}
+.social-bg {
   background-image: var(--season-bg);
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 2px 2px 8px var(--secondary-color);
+  -moz-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border-radius: 20px;
 }
-
 .socialicon {
   width: 100px;
   height: 100px;
@@ -506,16 +514,24 @@ input:checked + .slider:before {
 }
 
 /*spotify*/
+#spotify {
+  background-color: gray;
+}
 
 #bg-vid {
   width: 100%;
-  height: 100vh;
+  height: 74vh;
   position: absolute;
+  object-position: center;
   object-fit: cover;
 }
 
 .sf-text {
   z-index: 99;
+  position: relative;
+}
+.sf-link {
+  padding-bottom: 2rem;
   position: relative;
 }
 
@@ -683,3 +699,65 @@ input:checked + .slider:before {
     font-size: 15px;
   }
 }
+
+/*hobbies*/
+.hobbies {
+  background: var(--secondary-color);
+  color: #fff;
+  margin: 0;
+}
+.center {
+  text-align: center;
+}
+
+.hobbies-con {
+  width: 95%;
+  max-width: 1220px;
+  margin: 0 auto;
+}
+
+.episode {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  position: relative;
+}
+
+.episode__number {
+  font-size: 10vw;
+  font-weight: 600;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  text-align: center;
+  height: calc(10vw + 20px);
+  transition: all 0.2s ease-in;
+}
+
+.episode__content {
+  border-top: 2px solid #fff;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-gap: 10px;
+  padding: 15px 0;
+}
+
+.episode__content .title {
+  font-weight: 600;
+}
+
+.episode__content .story {
+  line-height: 26px;
+}
+
+@media (max-width: 600px) {
+  .episode__content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .episode__content .story {
+    font-size: 15px;
+  }
+}
+/*hobies end*/
