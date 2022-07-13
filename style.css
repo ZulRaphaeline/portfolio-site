@@ -271,7 +271,7 @@ body::-webkit-scrollbar {
 }
 .timeline::before {
   content: "";
-  background: #c5cae9;
+  background: var(--secondary-color);
   width: 5px;
   height: 95%;
   position: absolute;
@@ -363,6 +363,7 @@ body::-webkit-scrollbar {
   height: 200px;
   position: relative;
   margin-bottom: 20px;
+  border-radius: 5px;
 }
 .timeline-img-header h2 {
   color: #ffffff;
@@ -476,7 +477,6 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-
 /*Social Card*/
 #socialcard {
   background-color: var(--org-date-bgcolor);
@@ -486,7 +486,7 @@ input:checked + .slider:before {
   background-image: var(--season-bg);
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: 2px 2px 8px var(--secondary-color);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
   -moz-border-radius: 20px;
   -webkit-border-radius: 20px;
   border-radius: 20px;
@@ -647,6 +647,7 @@ input:checked + .slider:before {
   background-color: var(--primary-color);
   padding: 0px 20px;
   border-radius: 25px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2);
 }
 .org {
   color: #fff;
