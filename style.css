@@ -107,7 +107,7 @@ body::-webkit-scrollbar {
   background-color: var(--secondary-color);
 }
 .skillbg1 {
-  padding-top: 1rem;
+  padding: 1rem;
   background: var(--secondary-color);
 }
 .skillbg2 {
@@ -808,3 +808,9 @@ input:checked + .slider:before {
   filter: grayscale(100%);
 }
 /*hobies end*/
+
+.weather {
+  color: #222;
+  background-color: wheat;
+  padding: 5rem;
+}
